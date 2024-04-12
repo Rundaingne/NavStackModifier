@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A69BAEF2BC97D3D002B7297 /* NavigationStack+Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A69BAEE2BC97D3D002B7297 /* NavigationStack+Modifiers.swift */; };
 		0AD7A4792BC71C4900D90046 /* TestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD7A4782BC71C4900D90046 /* TestApp.swift */; };
 		0AD7A47B2BC71C4900D90046 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD7A47A2BC71C4900D90046 /* ContentView.swift */; };
 		0AD7A47D2BC71C4900D90046 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD7A47C2BC71C4900D90046 /* Item.swift */; };
@@ -35,15 +36,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0AD7A4752BC71C4900D90046 /* Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A69BAEE2BC97D3D002B7297 /* NavigationStack+Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NavigationStack+Modifiers.swift"; sourceTree = "<group>"; };
+		0AD7A4752BC71C4900D90046 /* NavStackModifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavStackModifier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AD7A4782BC71C4900D90046 /* TestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestApp.swift; sourceTree = "<group>"; };
 		0AD7A47A2BC71C4900D90046 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0AD7A47C2BC71C4900D90046 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		0AD7A47E2BC71C4A00D90046 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0AD7A4812BC71C4A00D90046 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		0AD7A4872BC71C4A00D90046 /* TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AD7A4872BC71C4A00D90046 /* NavStackModifierNavStackModifiers.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NavStackModifierNavStackModifiers.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AD7A48B2BC71C4A00D90046 /* TestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTests.swift; sourceTree = "<group>"; };
-		0AD7A4912BC71C4A00D90046 /* TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AD7A4912BC71C4A00D90046 /* NavStackModifierUINavStackModifiers.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NavStackModifierUINavStackModifiers.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AD7A4952BC71C4A00D90046 /* TestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUITests.swift; sourceTree = "<group>"; };
 		0AD7A4972BC71C4A00D90046 /* TestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,6 +75,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A69BAED2BC97D11002B7297 /* View Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				0A69BAEE2BC97D3D002B7297 /* NavigationStack+Modifiers.swift */,
+			);
+			path = "View Modifiers";
+			sourceTree = "<group>";
+		};
+		0A69BAF22BC9B535002B7297 /* Views & Data */ = {
+			isa = PBXGroup;
+			children = (
+				0AD7A4782BC71C4900D90046 /* TestApp.swift */,
+				0AD7A47A2BC71C4900D90046 /* ContentView.swift */,
+				0AD7A47C2BC71C4900D90046 /* Item.swift */,
+			);
+			path = "Views & Data";
+			sourceTree = "<group>";
+		};
 		0AD7A46C2BC71C4900D90046 = {
 			isa = PBXGroup;
 			children = (
@@ -86,9 +106,9 @@
 		0AD7A4762BC71C4900D90046 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0AD7A4752BC71C4900D90046 /* Test.app */,
-				0AD7A4872BC71C4A00D90046 /* TestTests.xctest */,
-				0AD7A4912BC71C4A00D90046 /* TestUITests.xctest */,
+				0AD7A4752BC71C4900D90046 /* NavStackModifier.app */,
+				0AD7A4872BC71C4A00D90046 /* NavStackModifierNavStackModifiers.xctest */,
+				0AD7A4912BC71C4A00D90046 /* NavStackModifierUINavStackModifiers.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -96,9 +116,8 @@
 		0AD7A4772BC71C4900D90046 /* Test */ = {
 			isa = PBXGroup;
 			children = (
-				0AD7A4782BC71C4900D90046 /* TestApp.swift */,
-				0AD7A47A2BC71C4900D90046 /* ContentView.swift */,
-				0AD7A47C2BC71C4900D90046 /* Item.swift */,
+				0A69BAF22BC9B535002B7297 /* Views & Data */,
+				0A69BAED2BC97D11002B7297 /* View Modifiers */,
 				0AD7A47E2BC71C4A00D90046 /* Assets.xcassets */,
 				0AD7A4802BC71C4A00D90046 /* Preview Content */,
 			);
@@ -133,9 +152,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0AD7A4742BC71C4900D90046 /* Test */ = {
+		0AD7A4742BC71C4900D90046 /* NavStackModifier */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0AD7A49B2BC71C4A00D90046 /* Build configuration list for PBXNativeTarget "Test" */;
+			buildConfigurationList = 0AD7A49B2BC71C4A00D90046 /* Build configuration list for PBXNativeTarget "NavStackModifier" */;
 			buildPhases = (
 				0AD7A4712BC71C4900D90046 /* Sources */,
 				0AD7A4722BC71C4900D90046 /* Frameworks */,
@@ -145,14 +164,14 @@
 			);
 			dependencies = (
 			);
-			name = Test;
+			name = NavStackModifier;
 			productName = Test;
-			productReference = 0AD7A4752BC71C4900D90046 /* Test.app */;
+			productReference = 0AD7A4752BC71C4900D90046 /* NavStackModifier.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0AD7A4862BC71C4A00D90046 /* TestTests */ = {
+		0AD7A4862BC71C4A00D90046 /* NavStackModifierNavStackModifiers */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0AD7A49E2BC71C4A00D90046 /* Build configuration list for PBXNativeTarget "TestTests" */;
+			buildConfigurationList = 0AD7A49E2BC71C4A00D90046 /* Build configuration list for PBXNativeTarget "NavStackModifierNavStackModifiers" */;
 			buildPhases = (
 				0AD7A4832BC71C4A00D90046 /* Sources */,
 				0AD7A4842BC71C4A00D90046 /* Frameworks */,
@@ -163,14 +182,14 @@
 			dependencies = (
 				0AD7A4892BC71C4A00D90046 /* PBXTargetDependency */,
 			);
-			name = TestTests;
+			name = NavStackModifierNavStackModifiers;
 			productName = TestTests;
-			productReference = 0AD7A4872BC71C4A00D90046 /* TestTests.xctest */;
+			productReference = 0AD7A4872BC71C4A00D90046 /* NavStackModifierNavStackModifiers.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		0AD7A4902BC71C4A00D90046 /* TestUITests */ = {
+		0AD7A4902BC71C4A00D90046 /* NavStackModifierUINavStackModifiers */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0AD7A4A12BC71C4A00D90046 /* Build configuration list for PBXNativeTarget "TestUITests" */;
+			buildConfigurationList = 0AD7A4A12BC71C4A00D90046 /* Build configuration list for PBXNativeTarget "NavStackModifierUINavStackModifiers" */;
 			buildPhases = (
 				0AD7A48D2BC71C4A00D90046 /* Sources */,
 				0AD7A48E2BC71C4A00D90046 /* Frameworks */,
@@ -181,9 +200,9 @@
 			dependencies = (
 				0AD7A4932BC71C4A00D90046 /* PBXTargetDependency */,
 			);
-			name = TestUITests;
+			name = NavStackModifierUINavStackModifiers;
 			productName = TestUITests;
-			productReference = 0AD7A4912BC71C4A00D90046 /* TestUITests.xctest */;
+			productReference = 0AD7A4912BC71C4A00D90046 /* NavStackModifierUINavStackModifiers.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -209,7 +228,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0AD7A4702BC71C4900D90046 /* Build configuration list for PBXProject "Test" */;
+			buildConfigurationList = 0AD7A4702BC71C4900D90046 /* Build configuration list for PBXProject "NavStackModifier" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -222,9 +241,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0AD7A4742BC71C4900D90046 /* Test */,
-				0AD7A4862BC71C4A00D90046 /* TestTests */,
-				0AD7A4902BC71C4A00D90046 /* TestUITests */,
+				0AD7A4742BC71C4900D90046 /* NavStackModifier */,
+				0AD7A4862BC71C4A00D90046 /* NavStackModifierNavStackModifiers */,
+				0AD7A4902BC71C4A00D90046 /* NavStackModifierUINavStackModifiers */,
 			);
 		};
 /* End PBXProject section */
@@ -263,6 +282,7 @@
 				0AD7A47B2BC71C4900D90046 /* ContentView.swift in Sources */,
 				0AD7A47D2BC71C4900D90046 /* Item.swift in Sources */,
 				0AD7A4792BC71C4900D90046 /* TestApp.swift in Sources */,
+				0A69BAEF2BC97D3D002B7297 /* NavigationStack+Modifiers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,12 +308,12 @@
 /* Begin PBXTargetDependency section */
 		0AD7A4892BC71C4A00D90046 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0AD7A4742BC71C4900D90046 /* Test */;
+			target = 0AD7A4742BC71C4900D90046 /* NavStackModifier */;
 			targetProxy = 0AD7A4882BC71C4A00D90046 /* PBXContainerItemProxy */;
 		};
 		0AD7A4932BC71C4A00D90046 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0AD7A4742BC71C4900D90046 /* Test */;
+			target = 0AD7A4742BC71C4900D90046 /* NavStackModifier */;
 			targetProxy = 0AD7A4922BC71C4A00D90046 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -426,6 +446,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Test/Preview Content\"";
+				DEVELOPMENT_TEAM = TCKPN33EED;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -454,6 +475,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Test/Preview Content\"";
+				DEVELOPMENT_TEAM = TCKPN33EED;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -489,7 +511,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Test.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Test";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NavStackModifier.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NavStackModifier";
 			};
 			name = Debug;
 		};
@@ -508,7 +530,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Test.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Test";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NavStackModifier.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NavStackModifier";
 			};
 			name = Release;
 		};
@@ -549,7 +571,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0AD7A4702BC71C4900D90046 /* Build configuration list for PBXProject "Test" */ = {
+		0AD7A4702BC71C4900D90046 /* Build configuration list for PBXProject "NavStackModifier" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0AD7A4992BC71C4A00D90046 /* Debug */,
@@ -558,7 +580,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0AD7A49B2BC71C4A00D90046 /* Build configuration list for PBXNativeTarget "Test" */ = {
+		0AD7A49B2BC71C4A00D90046 /* Build configuration list for PBXNativeTarget "NavStackModifier" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0AD7A49C2BC71C4A00D90046 /* Debug */,
@@ -567,7 +589,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0AD7A49E2BC71C4A00D90046 /* Build configuration list for PBXNativeTarget "TestTests" */ = {
+		0AD7A49E2BC71C4A00D90046 /* Build configuration list for PBXNativeTarget "NavStackModifierNavStackModifiers" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0AD7A49F2BC71C4A00D90046 /* Debug */,
@@ -576,7 +598,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0AD7A4A12BC71C4A00D90046 /* Build configuration list for PBXNativeTarget "TestUITests" */ = {
+		0AD7A4A12BC71C4A00D90046 /* Build configuration list for PBXNativeTarget "NavStackModifierUINavStackModifiers" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0AD7A4A22BC71C4A00D90046 /* Debug */,
